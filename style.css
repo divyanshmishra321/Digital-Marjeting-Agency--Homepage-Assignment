@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* Common Clases */
+.container {
+  width: 90vw;
+  margin: auto;
+}
+
+.button {
+  border: 1px solid transparent;
+  background-color: #5955b3;
+  border-radius: 5px;
+  padding: 4px;
+  color: aliceblue;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #9b9ce5;
+  color: white;
+
+  transition: ease-in;
+}
+/* Navbar Designed Here */
+
+/* navlogo */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+}
+.logo-img {
+  height: 6vh;
+}
+
+/* navbar_menu_list */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+
+.nav-list-items {
+  list-style: none;
+}
+
+.nav-list-items a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3vw;
+  font-weight: 600;
+}
+.nav-list-items a:hover {
+  color: #9b9ce5;
+}
+
+/* Left side section designed here */
+.mid-section {
+  padding-top: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-section-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+
+.main-text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#banner {
+  height: 35vw;
+}
+
+span {
+  color: #5955b3;
+}
+
+#main-text-heading {
+  font-size: 4vw;
+  color: #3c2e60;
+}
+
+#secondary-text {
+  font-size: 2.5vh;
+}
+
+.services-btn-div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#services-btn {
+  padding: 10px 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .mid-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  #main-text-heading {
+    font-size: 13vw;
+    color: #3c2e60;
+  }
+  #banner {
+    height: 100%;
+    width: 90vw;
+  }
+  .services-btn-div {
+    height: fit-content;
+    width: 70%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #services-btn {
+    max-width: 180px;
+  }
+
+  .contact-us {
+    height: fit-content;
+  }
+
+  .nav-list-items a {
+    text-decoration: none;
+    color: black;
+    font-size: 4vw;
+    font-weight: 600;
+  }
+  .logo-img {
+    height: 4vh;
+  }
+}
